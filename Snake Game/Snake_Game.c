@@ -9,8 +9,8 @@
 //MY SCREEN RESOLUTION (you may need to tweak it according to your own screen)
 #define WINDOW_WIDTH 640
 #define WINDOW_HEIGHT 480
-#define WINDOW_X 10
-#define WINDOW_Y -20
+#define WINDOW_X SDL_WINDOWPOS_CENTERED
+#define WINDOW_Y SDL_WINDOWPOS_CENTERED
 
 #define GRID_SIZE 60
 #define GRID_DIM 600
@@ -392,7 +392,7 @@ int main()
         WINDOW_Y,
         WINDOW_WIDTH,
         WINDOW_HEIGHT,
-        SDL_WINDOW_BORDERLESS
+        SDL_WINDOW_SHOWN
     );
     
     if(!window) {
